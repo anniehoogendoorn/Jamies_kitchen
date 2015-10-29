@@ -1,0 +1,13 @@
+<?php
+
+function simplified_content_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'comment-form'){
+    print '<pre>';
+    print_r($form);
+    print '</pre>';
+    // hide($form['subject']);
+    // $form['subject']['#default_value'] = "Feedback";
+    // hide($form['copy']);
+    // $form['copy']['#default_value'] = 1;
+  }
+}
